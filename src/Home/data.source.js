@@ -15,7 +15,7 @@ export const Nav30DataSource = {
         className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航一', name: 'text' }],
+          children: [{ children: '前端地图', name: 'text' }],
         },
         subItem: [
           {
@@ -75,7 +75,7 @@ export const Nav30DataSource = {
         className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航二', name: 'text' }],
+          children: [{ children: '开发助手', name: 'text' }],
         },
       },
       {
@@ -83,15 +83,7 @@ export const Nav30DataSource = {
         className: 'header3-item',
         children: {
           href: '#',
-          children: [{ children: '导航三', name: 'text' }],
-        },
-      },
-      {
-        name: 'item3',
-        className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航四', name: 'text' }],
+          children: [{ children: '发现广场', name: 'text' }],
         },
       },
     ],

@@ -1,7 +1,10 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  ssr: {},
+  ssr: {
+    devServerRender: false,
+
+  },
   exportStatic: {},
   nodeModulesTransform: {
     type: 'none',
@@ -10,4 +13,10 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
   ],
   fastRefresh: {},
+  antd: {
+    compact: true,
+  },
+  plugins: [
+    "babel-plugin-styled-components"
+  ],
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { Row, Col } from 'antd';
+import { Row, Col, Divider } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from './utils';
 
@@ -66,7 +66,7 @@ class Content3 extends React.PureComponent {
               component="div"
               {...childObj.content}
             >
-              {childObj.content.children}
+              {childObj.content.children}234
             </TweenOne>
           </div>
         </TweenOne>
@@ -75,6 +75,7 @@ class Content3 extends React.PureComponent {
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
+        <Divider />
           <div {...dataSource.titleWrapper}>
             {dataSource.titleWrapper.children.map(getChildrenToRender)}
           </div>

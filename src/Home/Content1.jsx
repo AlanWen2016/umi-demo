@@ -1,9 +1,8 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { Row, Col } from 'antd';
+import { Row, Col, Divider} from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-
 function Content1(props) {
   const { ...tagProps } = props;
   const { dataSource, isMobile } = tagProps;

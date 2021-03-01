@@ -1,10 +1,10 @@
 import React from 'react';
-import { Row, Col,  Divider} from 'antd';
+import { Row, Col,  Divider, Button, Breadcrumb, Pagination} from 'antd';
 import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from './utils';
 
-class Content5 extends React.PureComponent {
+class Guidex extends React.PureComponent {
   getChildrenToRender = (data) =>
     data.map((item) => {
       return (
@@ -28,36 +28,35 @@ class Content5 extends React.PureComponent {
       dataSource.block.children
     );
     return (
-      <div {...props} {...dataSource.wrapper}>
+      <div {...dataSource.wrapper}>
 
         <div {...dataSource.page}>
           <div key="title" {...dataSource.titleWrapper}>
-            {dataSource.titleWrapper.children.map(getChildrenToRender)}
+            前端社区
           </div>
-
-          <OverPack
-            className={`content-template ${props.className}`}
-            {...dataSource.OverPack}
-          >
-            <TweenOneGroup
-              component={Row}
-              key="ul"
-              enter={{
-                y: '+=30',
-                opacity: 0,
-                type: 'from',
-                ease: 'easeInOutQuad',
-              }}
-              leave={{ y: '+=30', opacity: 0, ease: 'easeInOutQuad' }}
-              {...dataSource.block}
-            >
-              {childrenToRender}
-            </TweenOneGroup>
-          </OverPack>
+          <div>
+            <Row>
+              <Col span={6}>col-6</Col>
+              <Col span={6}>col-6</Col>
+              <Col span={6}>col-6</Col>
+              <Col span={6}>col-6</Col>
+            </Row>
+          </div>
+          <Breadcrumb>
+            <Breadcrumb.Item>Home</Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <a href="">Application Center</a>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <a href="">Application List</a>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>An Application</Breadcrumb.Item>
+          </Breadcrumb>
+          <Pagination defaultCurrent={1} total={50} />
         </div>
       </div>
     );
   }
 }
 
-export default Content5;
+export default Guidex;
