@@ -20,6 +20,7 @@ import {
   Footer10DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
+import styles from './less/custom.less'
 import Guidex from './Guidex';
 
 let isMobile;

@@ -2,8 +2,7 @@ import { defineConfig } from 'umi';
 
 export default defineConfig({
   ssr: {
-    devServerRender: false,
-
+    // devServerRender: false,
   },
   exportStatic: {},
   nodeModulesTransform: {
